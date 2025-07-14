@@ -2,6 +2,20 @@
 
 A Nix flake that runs Claude Code in a sandboxed environment using bubblewrap.
 
+> [!NOTE]
+> Why?
+> If you want to run Claude Code with `--dangerously-skip-permissions` Anthropic recommend sandboxing -
+>> WARNING: Claude Code running in Bypass Permissions mode  
+>> In Bypass Permissions mode, Claude Code will not ask for your approval before running potentially dangerous commands. This mode should only be used in a sandboxed container/VM that has restricted internet access and can easily be restored if damaged. By proceeding, you accept all responsibility for actions taken while running in Bypass Permissions mode https://docs.anthropic.com/s/claude-code-security
+
+## Installation
+
+If you don't have Nix installed, you can install it using [the Determinate Systems installer](https://github.com/DeterminateSystems/nix-installer) which enables flakes by default:
+
+```bash
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determinate
+```
+
 ## Usage
 
 1. Enter the development environment:
