@@ -2,6 +2,9 @@
 
 A Nix flake that runs Claude Code in a sandboxed environment using bubblewrap.
 
+> [!WARNING]
+> Bubblewrap does not yet support restricting internet access to specific servers. Ideally, one should be able to restrict `Claude Code` to only the Claude API to restrict it's network access. `Bubblewrap` allows either full network access with `--share-net` or blocks all network access by omitting `--share-net`.
+
 > [!NOTE]
 > Why?
 > If you want to run Claude Code with `--dangerously-skip-permissions` Anthropic recommend sandboxing -
